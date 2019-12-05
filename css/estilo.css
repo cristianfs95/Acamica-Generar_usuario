@@ -1,0 +1,84 @@
+/* Colores: https://colorhunt.co/palette/164925 */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 1fr;
+    grid-template-columns: 30% 1fr;
+    background-image: linear-gradient(#bbbbbb, #e9ea77);
+}
+
+.header{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    color: #46185f;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.aside{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    border: solid 1px rgb(59, 59, 59);
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #e9ea77;
+    box-shadow: 2px 2px 2px rgb(78, 76, 76);
+    align-content: stretch;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.button{
+    border: solid 2px #46185f;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 black;
+    background-color: #297ca0;
+    color: #e9ea77;
+    box-shadow: 2px 2px 2px black;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.main{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 15px;
+    font-size: 1.5rem;
+
+}
+
+#textoSuccess{
+    clear: both;
+    width: 100%;
+}
+
+.datos ol li{
+    list-style-type: none;
+    text-align: center;
+}
