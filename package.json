@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify generarUsuario.js > generarUsuarioBuilded.js"
+    "build": "browserify js/generarUsuario.js > js/generarUsuarioBuilded.js"
   },
   "repository": {
     "type": "git",
